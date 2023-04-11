@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Spletno gradivo z orodjem Remark</title>
+    <title>Gremo na pohod</title>
     <meta charset="utf-8">
     <style>
       @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
@@ -9,81 +9,296 @@
       @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
 
       body { font-family: 'Droid Serif'; }
-      h1, h2, h3 {
+      h1{
+        color:#006600;
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      h2{
+        color:#99cc00;
         font-family: 'Yanone Kaffeesatz';
         font-weight: normal;
       }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
       .remark-slide-content { background-size: contain; }
+
+      .shadowbox {
+        width: 'text-width';
+        border: 1px solid #333;
+        box-shadow: 8px 8px 5px #444;
+        padding: 8px 12px;
+        background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+      }
+
+      
+
     </style>
   </head>
   <body>
     <textarea id="source">
 
-layout: true
-background-image: url(background.jpg)
-background-position: center
-background-repeat: no-repeat
-<br>
-<br>
-<br>
+class: center
+<h1>Pojdimo na pohod v gorski park Catoctin</h1>
+
+***Koliko kalorij boste porabili s pohodništvom po petmiljski krožni poti?***
+
+<img src="Lets-go-take-a-hike.jpg" alt="Hike" width="700">
+
 
 ---
 
-class: center, middle
+<h2>Za začetek</h2>
 
-# Spletno gradivo z orodjem Remark
-
-???
-Nekaj opomb.
-
----
-
-name: remark
-# Remark
-
-<br>
-
-Orodje Remark lahko uporabimo za prevedbo zapiskov (pripravljenih v Markdownu) v spletno predstavitev.
-
-Več o možnostih, ki jih orodje ponuja, lahko preberemo v [modelni predstavitvi](https://remarkjs.com/) ali na
-[projektni strani](https://github.com/gnab/remark) z [natančnejšo dokumentacijo](https://github.com/gnab/remark/wiki).
-
----
-
-# Navodila
-
-<br>
-
-- Uporabite gradivo, ki ste ga pripravili s pomočjo Markdowna.
+Po zaključku tega modula bi morali biti sposobni:
+--
+<ul>
+    <li>uporabiti Excelovo preglednico za izračune</li>
+--
+    <li>z Excelovo preglednico določiti oceno svojega pohoda po izbranih odsekih</li>
+--
+    <li>uporabiti rezultate iz preglednice, da z grafom poiščete svojo stopnjo porabe energije</li>
+--
+    <li>uporabiti rezultate iz grafa in preglednice Excel, za določitev porabe svojih kalorij</li>
+--
+    <li>ugotoviti, koliko kalorij (Big Macov) ste pokurili na svojem pohodu</li>
+</ul>
 --
 
-- Segmentirajte besedilo in ga smiselno razporedite na več strani.
---
-
-- Vsebinsko dopolnite in zaključite gradivo.
---
-
-- Objavite gradivo kot spletno stran.
+<img class="emoji" alt="warning" src="data:image/png;base64,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" height='30px'> *Vedeti morate tudi, kje je gorski park Catoctin.*
 
 ---
 
-# Namigi
+<h2>Lokacija</h2>
+
+[Gorski park Catoctin](https://www.nps.gov/cato/index.htm) leži v gorovju Apalači, ki se razteza od Georgie do jugovzhodne Kanade.
+Apalaško gorovje je razdeljeno na fiziografske province, ki se razlikujejo po geoloških lastnostih, kot sta starost ali struktura.
+Gorski park Catoctin leži v provinci [Blue Ridge](https://www.peakbagger.com/range.aspx?rid=164) v južnih in srednjih Apalačih.
+Modri ​​greben vsebuje najvišje gore v vzhodni Severni Ameriki (npr. Mount Mitchell, NC, 2037 m) in vsebuje kamnine, stare več kot milijardo let.
+Za več informacij o geologiji glejte [Apalaške geološke province](https://www.usgs.gov/).
+
+---
+
+Geološka zgodba gorskega parka Catoctin vključuje vse tri osnovne vrste kamnin:
+--
+<ul>
+    <li><b>magmatske kamnine</b>, nastale zaradi starodavne vulkanske dejavnosti, ki je bila nekoč prisotna na tem območju;</li>
+--
+    <li><b>sedimentne kamnine</b>, nastale z erozijo starejših kamnin in odlaganjem nastalega sedimentnega drobirja;</li>
+--
+    <li><b>metamorfne kamnine</b>, ki so nastale med dogodki izgradnje gora, ki so ustvarili gorovje Apalači.</li>
+</ul>
+
+--
+
+Ko je prišlo do metamorfizma, so se magmatske in sedimentne kamnine pretvorile v nove kamnine, ki so zdaj izpostavljene v globoko erodiranih gorah.
+Te metamorfne kamnine so odporne na vremenske vplive in erozijo ter tvorijo grobe nazobčane izbokline, ki jih vidimo v parku.
+Zeleni kamen najdemo v parku in je produkt metamorfiziranega bazalta. Prevladuje pa predvsem v sosednjih regijah.
+Tam ga imenujejo Catoctin Greenstone, po nahajališču v Catoctinu. Najdemo lahko tudi metamorfizirani peščenjak, imenovan kvarcit.
+Kvarcit, najden v Catoctinu, se imenuje Weverton. Za več informacij glejte [Geologija gorskega parka Catoctin](https://nps.gov/cato/learn/nature/geologicformations.htm).
+
+---
+
+<h2>Problem</h2>
+
+***Kako izračunati, koliko kalorij porabite na pohodu?***
+
+Količina energije (kalorij), ki jo porabite na pohodu, je odvisna od naklona poti, hitrosti, s katero jo prehodite, in vaše lastne teže (vključno s tem, kar imate s seboj).
+Ta modul vas popelje na pohod v gorski park Catoctin in vas vodi skozi nekaj izračunov, da ugotovite, koliko kalorij bi porabili.
+
+Med obiskom Washingtona DC ste se s prijateljem odpravili na pohod po gozdovih gorskega parka Catoctin v bližnjem Marylandu.
+Preden ste šli, ste se ustavili v McDonald'su in si privoščili dva Big Mac burgerja. Takoj ste obžalovali, da ste pojedli dva Big Maca, in si rekli, da boste,
+ko se vrnete s pohoda, izračunali, koliko kalorij ste porabili. Ko ste prispeli v park, ste zgrabili zemljevid poti in topografski zemljevid območja, ki vam bosta pomagala pri prihodnjih izračunih.
+
+Koliko Big Macov ste pokurili na svojem pohodu?
+
+<img src="Picture1.png" alt="Big Mac" width="100"> <img src="Picture1.png" alt="Big Mac" width="100"> <img src="Picture1.png" alt="Big Mac" width="100"> <img src="Picture1.png" alt="Big Mac" width="100">
+
+---
+
+<h2>Ozadje</h2>
+
+***Uporaba topografske karte***
+
+V tem modulu boste morali uporabiti topografski zemljevid. Tukaj je nekaj hitrih napotkov:
+--
+<ul>
+    <li>Vse točke vzdolž katere koli plastnice (ali konturne črte) so na isti nadmorski višini.</li>
+--
+    <li>Konturni interval, ki je naveden na karti, označuje višinsko razliko med zaporednimi plastnicami.</li>
+--
+    <li>Višine so podane le na določenih plastnicah, imenovanih indeksne plastnice. Interval konture uporabite za določitev nadmorske višine, ki jo predstavlja katera koli dana črta, ki leži med indeksnimi konturami.</li>
+--
+    <li>Geološki zavod Združenih držav (USGS) izdeluje in distribuira topografske zemljevide za Združene države.</li>
+</ul>
+
+--
+
+<center><img src="Picture2.jpg" alt="Topološka karta" width="280"></center>
+
+---
+
+<h2>Vaš pohod</h2>
+
+Odločili ste se za krožno pot, ki se začne pri Cunningham Falls, potujete proti severu do Blue Ridge Overlook, proti jugu do centra za obiskovalce in nato nazaj do Cunningham Falls.
+Za informacije in nasvete o pohodu ste prosili nadzornika. Predlagal je, da bi morali, ker gre za približno 5 milj (8 km) pohoda, hoditi s hitrostjo približno 2 mph (3,2 kilometrov na uro).
+
+<center><img src="Picture3.jpg" alt="Topološka karta" width="400"></center>
+
+---
+
+<h2>Iskanje višin in razdalj</h2>
+
+Če želite ugotoviti, koliko kalorij (in Big Macov) ste porabili na pohodu, pot razdelite na zaporedje segmentov poti in poiščite stopnjo ali naklon vzdolž vsakega od njih.
+Priročno je začeti in končati segmente tam, kjer vaša pot prečka plastnico na zemljevidu. Naklon je preprosto razmerje med višinsko razliko med točkama in vodoravno razdaljo med točkama.
+Plastnice uporabite za določitev nadmorske višine (E, v metrih) vsake točke. Za določitev vodoravnih razdalj ($\Delta s$) med točkami uporabite dolžino segmenta poti na zemljevidu skupaj z merilom zemljevida.
+Preglednica prikazuje vaše podatke za osem segmentov, ki sestavljajo vašo sled zanke.
+
+
+<img src="Picture4.png" alt="Zemljevid s segmenti" width="400"> <img src="Picture5.png" alt="Tabela" width="284"> <a name="slika"></a>
+
+---
+
+<div class="shadowbox">
+<img class="emoji" alt="warning" src="data:image/png;base64,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" height='30px'> Iz spletne učilnice si na svoj računalnik shranite Excelov delovni list. Izpolnite preglednice na vsakem od zavihkov, začenši z »Diapozitivi 7–15«. Rumene celice vsebujejo dane vrednosti, oranžne pa formule. Preglednica na zavihkih »Odgovori EOM« in »Napredni odgovori EOM« je namenjena vašim odgovorom na vprašanjem ob koncu modula oziroma napredna vprašanja ob koncu modula. <b>(Rešite samo zavihek Diapozitivi 7-15 in prvo nalogo na zavihku Odgovori EOM (Dodatna naloga))</b>.
+</div>
+
+---
+
+<h2>Izračun naklona</h2>
+
+Zdaj, ko imate višine in razdalje vzdolž svojih odsekov, poiščite razlike v višinah ($\Delta E$) med vašimi odseki. *(Tabela 3)*
+
+(<img class="emoji" alt="memo" src="data:image/png;base64,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" height='30px'> **Opomba:** Ni vam treba izračunati razlik vaših razdalj, saj ste svoje razdalje izmerili od točke do točke.)
+
+Čeprav vam je nadzornik rekel, da mora biti pohod dolg 5 milj, je vsota vaših razdalj bližja 6600 m (4,1 milje) (glejte Excelovo preglednico na [Sliki 1](#slika)).
+Opazili ste, da ste na zemljevidu izmerili razdalje v ravni črti, zato sklepate, da ne upoštevate ovinkov na poti.
+Lahko vzamete geodetski trak in poskušate natančneje izmeriti razdalje, vendar te opreme nimate.
+Uporabite torej matematiko: opazite, da je 5,0 milj 22 % večje od 4,1 milje (se strinjate?) in povečate vsako vodoravno razdaljo za enak odstotek. *(Tabela 4)*
+
+---
+
+<center><figure>
+<img src="Picture6.png" alt="Tabela 2"  width="262">
+<figcaption>Tabela 3</figcaption>
+</figure></center>
+
+<center><figure>
+<img src="Picture7.png" alt="Tabela 3">
+<figcaption>Tabela 4</figcaption>
+</figure></center>
+
+---
+
+Zdaj, ko ste izračunali vodoravno in navpično razdaljo, lahko izračunate naklon vzdolž vsakega segmenta poti tako, da navpično razdaljo ($\Delta E$) delite z vodoravno razdaljo ($\Delta s$).
+Potem, ker vodniki po pohodniških poteh navadno dajejo naklone (frakcije) kot stopnje (v odstotkih), pretvorite vse svoje naklone v stopnje tako, da pomnožite s 100.
+
+<center><img src="Picture8.png" alt="Tabela 3"></center>
+
+---
+
+<h2>Izračun stopinj</h2>
+
+Za izračun kota vašega nagiba uporabite funkcijo arktangensa v Excelu. Če želite izvedeti več o arktangensih, kliknite tukaj: [Končna opomba 1](#opomba1).
+
+Koti, ki jih ustvari Excelova funkcija arktangensa, so v radianih, tako da pretvorite radiane (stolpec H) v stopinje (stolpec I). Kliknite tukaj za informacije o radianih: [Končna opomba 2](#opomba2)
+
+<center><img src="Picture9.png" alt="Tabela 4"></center>
+
+---
+
+Morda boste opazili, da obstajajo negativni nakloni in s tem negativni koti.
+Nekatere študije so pokazale, da hoja po negativnem klancu navzdol porabi kalorije z enako hitrostjo kot hoja po ravni površini (tj. 0-odstotna stopnja).
+Excel ima logično funkcijo (IF), ki omogoča pisanje formule za zamenjavo negativnih kotov z ničlami, vendar za zdaj ročno vstavite ustrezne ničle v stolpec J. 
+
+* Formula za izračun celice H3: <font color="red"><ins>=ATAN(F3)</ins></font>
+* Formula za izračun celice I3: <font color="red"><ins>=DEGREES(H3)</ins></font>
+
+---
+
+<h2>Rast porabe energije</h2>
+
+<img src="Picture10.jpg" alt="Graf" width="190" align="left" hspace="25">
+
+V literaturi najdete graf, ki prikazuje stopnjo porabe energije (os y) v primerjavi s stopnjo hoje (os x) za različne naklone (ločene črte na grafu).
+S to številko lahko določite stopnjo porabe energije (kal/kg/min) vzdolž vsakega segmenta poti in na podlagi teh vrednosti količino porabljene energije (porabljenih kalorij) v vsakem segmentu.
+Toda preden lahko izračunate kalorije, morate pretvoriti enote za obe stopnji.
+
+<br>
+<br>
+
+Hitrost, s katero ste hodili, je 2 mph, vaša teža (ki jo predvidevamo za ta primer) pa 150 lbs. Hitrost hoje morate pretvoriti v m/min in svojo težo v kg.
+
+---
+
+<h2>Pretvorbe 1</h2>
+
+Spremenite svojo prejšnjo preglednico, da prikaže vaše znane vrednosti in njihove vrednosti, ko jih pretvorite v potrebne enote.
+
+<center><img src="Picture11.png" alt="Tabela 5" width="600"></center>
+
+---
+
+<h2>Branje z grafa</h2>
+
+Iz *Grafa 1* vnesete stopnje porabe energije za vsak segment poti v stolpec B svoje preglednice. Nadaljujte z ustvarjanjem preglednice z dodajanjem teh vrednosti.
+
+<center><img src="Picture12.png" alt="Tabela 6" width="500"></center>
+
+---
+
+<h2>Pretvorbe 2</h2>
+ 
+Zdaj morate izračunati čas, ki ste ga porabili za hojo po vsakem segmentu, in vašo porabo kalorij v vsakem segmentu. Prav tako seštejte svoje porabe kalorij,
+da ugotovite skupno število kalorij, ki ste jih porabili na celotnem pohodu.
+
+<center><img src="Picture13.png" alt="Tabela 7" width="500"></center>
+
+---
+
+<h2>Prtevorba v Big Mac-e</h2>
+
+Zdaj, ko poznate število kalorij, ki ste jih porabili na pohodu, lahko izračunate število Big Macov, ki ste jih porabili. Raziščete splet in ugotovite, da imajo Big Mac 560 kalorij.
+
+<center><img src="Picture14.png" alt="Tabela 8" width="400"></center>
+
+<img class="emoji" alt="warning" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAMMElEQVR42uWbCVBUVxZAP93N1s0qDdrsqGAQFzajokZHhWBc44I4I1HRaBYn0RnNUhMLUzMTs2islOOQscy+mImJJrGjwRExAq5REZXFaECRbvZFUNnv3BsefuzXX7qBWECoOvXev9u79/5fdr/3WwEAftc88AXxzwJRILaIHcOWySz6dAPwT4bYIGpkIBJEsLma6WR9sgF0d1mBmohAm0fS3h/yRdGPE38maE4y0jEbi77YAEvEdZC7Ytz1A6HnoTAeoHwtQBmC87z9oed93BURZEO2faoB7NF3QIYe2j54d0vBEmipWI+sE0EZ6ciG2cr6UgOsEc+4aPul9Zem17eU/wVaWdsKuyYd2ZAt+fSJBrC774SEnPw4ML1F/2Rr0WXP3QPJSHfy46B0smU+sr7QAGvEe/lM+3UN2TMam8v+DM1lqxnPitB1+WogG7IlnwfxFDyIu++MRJz7IiijWRcPzaXYgJJn2vG0OC9dDWRDtuTDfGW9qwH8x57f2oVOrzblzmhuLfYpaC5eZZwSBPVNuTObyYd8WQyL3tgAOdIPmZi1Z0RuU+ESaMIim4qeRFbSyM0JsiFb8iFfFkPeqxrA7r4t4r8hvt+WpsuzsLgV0KRvz3KCl9FIjbg8E8iXYrBYFr2pAXJEbW0tRF7VhuQ33lgMjfp4aNQtk8BAR7YFi+GqNjifYlCs3+op+K3uvhIZsnm1+j+Nl2ewwpZAY+ETJkP25EsxKBaLadEbGqBAXNXOwoyCpBB94/VFWFAc4FMgTSEvIx/ypRgUi2JS7B7dAHb3VUjQjhfcPm3IfQwabvwJGgoWMf5IiHMm564Z5EsxEte7fcq+IqtojZ7cAEuk/xBv+QJ9ckh5/bUFUF8QC/XXFxoD7zTRdm1gh9fkSzH0ycHlgz3k8yl2d2+Uuvvu2yEjP0vQ7K3PicYiYqiAdswHGlt0MQC34wDqiMWtcx0Wnc9sCOZDMSjWJxiTYrM1LHpiAywRzehAy7jSH0Nr6vIeh7r8echckby5AEXzAaoWwc7NYTBulAuMCXeBxE2hAJWxqIshG2YvQrEoJsWmNbrzKeju7W7o3k2apLqcSEwcG5A3B5nNmAONKIOahbA0xoec7mHRHC+AmwvxHz7m1x5qQk4UUGy0DRO3yz2nAVaIR2S49aqKtNA7d67OhDu/8EDx45B3MpIcjJKbOhWgdC4Y9b86C6rSwu5EhluuorVozR7RAHb3HZGHD27VpN7JnowJT8eEH+OAktmQe3SyZAMyD00EKJttzBdjzoA72VOA1kDbUWxNWU9ogDXiFTPRem11enDD7Z8fhVai7oFkUDANKi9GgqXCwmgDis9OBSicDu1iiCOb0xpzJ1ivoTW7Y7vcXYcdEan/dv/p9qVHMMlIuH15qlEaf4kC0EWDxs2aK17tbAUt16OgKT9K0p9i0xqpie6n0WdsdxyadMd212flNJsNNceDm27l/gFu5U5GaOSpuzwZoDoaQoc7cA0Y6m8HUBkNdVeM+7bFJmqOj2xagWvS2l3dLnd1w+OMTDj9vufF2gsRUJszCWqzJzIeYeCcjbcQqIqC2FluXAPmPKrGBkRigaK9GEOMRWvQWqd2ul+ktSmHrmyUunr3B62bb/t67cnhLbVZE6CV8cZhOqicAhvX+HINeOlpb9RN5eylYtGa62KUr1EOXXkKunL3XXDXMznzI48rNZkPQ82lCGRs28jDdFA6CT7bGsA14P23/AHKJokxRPi4WTjPHA2ZH3v8jL6TKJfOPgVdOewI2LhEua3mRBDUXBwDNRdG49gxUDAO0r8exjUgZVcQQOE4sjGRMUBrJ8Sp3qFcOnto0untrspaeDRnl8eNmxlhcDNzFBJOIz9n122yliujQX8ylGtA/tEQgKuj29tKxGBcQNm5MMj53KOAcunsoUlnDzse2vyU6r2bJwIxGWzA+VCTqcsOx0PPMHB2UtwtXmUrg7qscKhHHe8TJn1Nax8PhM0rVe9RTp05NOnM3XfzchHmXNntXlJ9dgRUZwQjIxnBhCgzwq3MYIBrYRA+QnW3AcOG2ALkhcKtiyESfsFtI8+5EXDlK02xu5Mwm3Iz99CkM9vd4e8+b/dl1bEAqMLFq84OR9hoIlAUBgunO99twOypjgB6vKOkNxPKgXJJfE61C2MNM3e7bO52d8AIX/mia3s1lVU/DcUEgqDqjCFDRSTkUDgSNjwrfhdYt8IVGxAs+pyVisXHJSiX/D2aykAveSzlaM522ZyvvPZIyCcvqrSVaYOg8kwgVP70kBmI9pA3DD7d4il+BL7mAZA/jHSdikm5UE4frVfuw3jBLFeL7myAFeIeMUS+rPC7/rUVp/yh4lSACF6LBEiPDMh9CE7vFr8Mpe/yIZl0HBFp+Ul/uPFN/9pR/nJ6u6wxdbtszmFH+J6NqsMVaT5QcXowLjrIBIzbNVz0h2spfncbcPWQH8lI1zVSfeDrBFWyOYcmpt59z2nhstU6rVtd+XE/KD8xEPETQRmT0yiBqKs+PRCaLgwCL40lDFDLoe78IKg5zfQdIK5HOfBy3T63uqhg2TOUsylPgamHHaP3/8PuePlRT1zExwR8O7S5fc4X9Ee9QXfEG25n+HH6Tq1xAmWYo/bvynTK2ZRDE5Pe7cdMkL1QpFU3lh3zgrJ0xq9zT4LNOZhctGNyTNYLWi55A+T7Ib40RxnpjXBM9BVlbXN+JIq0Lo0LxsnWm3JoYsq7/fEpbykzyo5oMLgHlKV1FnegseKYB0CuNyTtcIXYaCVBc5KRjuwYvK90XHFOOVKuKW8qz2Hu4zo6NOnw3f7KaMXGYq1zc2mqBkpTB4jQNZOZptNgghqAbHfY9rIjtxcgGWRREe1jcXOJ+LyOco6fKkvA2L732y53+G7/2Du22aUprlB6tD/ixo+pBM15SC/SH/fw/UF/2I0VzVOEOrTh1iCkY/O2lBPlnL5VmdXRbwzu+25//VzF5pLvnaDkR1eG2mBEjqgRUcb0BNMjTN541hWOfOAs2YDUD52h4awb+XJwOXDrE+KcKNY6wV9nK97E2IOltsvS7/YVQuSZf9nklyT3w6AuUJJCIwPnKEMMZTQSvB3Nb51ygay9kg0gHdr04+IymMzFYOTyEm0x9zPbbfIUCmGK1KGJ5Lv9hFh5YvH3DlCc4gzFhw1xYqNxHYOzLT3iDHC+H8yaZMkVTzLSlaYY+ImxpNcXc+TlWgdIiJFtl/qNgdHDDmel8NiFd631xYewAcmOPIfZaKaOqDnmCNVpjrB0phXQ+wGC5jfTSHc/386tSTVkJNoUOlgL04z9xsDYu/2hW5bJPynap4KiZHsoOiSFQwdyB0mb6lR7gAxHKD3sgPw6R5lDR/HN0DuIJCNYy1tPyD809hsD7t3+QDdhXvZOy7KiJGzAQcb/aORAuR3SXm/H2XMwfckhFVSm2CE0b/OheBRDjCexLr+eqOPWolqyd1qVeboIcw1/Y8AddiSuku/R77MB/UElTxIbOWyN2NqKOmlf3oaga1FHcHmIkE4cpeJTTdtXyXcbHprcc9QV4ivEXv5AUa1PogYgGJTmIsZktve3O8j5PQCoGQayH2wg9z1F1QisUTw6ExtggwzZtkL2uf5bK3RAfrBmWN1LEpOLen4UYbEYnK30nF3zSK9Na3Fz8Rr51hK2LRc+o1qp5vYNUCFjjrwuy9FpLUF3QAG6/ZYdc4DoyE4hjrzcTBRsXTPXYj5UW8o/Zdlsp6gybMCkE5struu05Nw3odqOY41Uq2ED7JEJiU8KB3Vfy9EYOaBgcHMaObkkvA+nQ8z0U0gg7UtQbdtXCAepVqrZ8AkIV6uENd//Tbhe+KUFFH4jg8JvjSE3S87ofp/v5KbHoFq+lIH2FeGaq0p4nmo1fAKskABknpuj8EbCAuHM7heE0r0vC1V7XhRufvWSUNMbodypBqrllXnCGSx+E9XIarUy/B7ggYxH4pFXkR3If5HvkP3IAcYPPRoxz/2UO6thB6tpGavR3dg3QXvWmSlIHLIW2Yi8gWxB3ka29hLeZjm/jiQga5DFrLYAqlVqM+TCPiMjkGnIfNaMpezJWN5LiGc5x1ENrJaxrDaXjs4DHBAP1qmRyChkDAsQ0UsYy3IexWoIYDU5mHMkpkScEDXbQAzoZVDOalaDUupI7Hf/3+f/D/WnwPHv0AmHAAAAAElFTkSuQmCC" height='30px'> Ne pozabite, da je kalorija kilokalorija, tako da je vrednost 560, ki ste jo našli za Big Mac-a, dejansko 560.000 kalorij.
+
+---
+
+<h2>Zaključek</h2>
+
+Ko opravite vse izračune, ugotovite, da ste prehodili 5 milj v dveh urah in pol ter za to porabili samo 1 Big Mac-a. Naslednjič se raje odločite za solato, preden odidete na potep!
 
 <br>
 
-- Pomagajte si z dokumentacijo za [remark](#remark).
-- Znotraj besedila v Markdownu lahko uporabljate `html` (<code>html</code>).
-- Gradivo lahko polepšate z uporabo `css` (na primer slikovno ozadje, spremembe barv naslovov, ...).
-- Poslužujete se lahko tudi jezika `javascript` in dodate $\LaTeX$ formule ali kak drug interkativen element.
+<div class="shadowbox">
+    <img class="emoji" alt="memo" src="data:image/png;base64,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" height='30px'><b>Dodatna naloga</b>
+    <p>Spremenite svojo preglednico, da izračunate, koliko sendvičev Subway Veggie Delight ste pokurili na svojem pohodu. 6-palčni sendviči Veggie Delight imajo 230 kalorij.</p>
+  </div>
 
-<center>
-  <button onclick="klik()">Bomo zmogli?</button> <label id="na-klik"></label>
-</center>
+---
 
-???
-Bomo bomo.
+<h2> <a name="opomba1"></a> Opomba 1 (tangens)</h2>
 
+Tangens  kota ($\theta$) v pravokotnem trikotniku je razmerje med dolžino stranice, ki je nasproti kotu (tukaj $\Delta E$), in dolžine stranice, ki meji na kot ($\Delta s$).
+Arktangens poišče kot ($\theta$), katerega tangens je to razmerje. Druge sintakse arktangensa so: $\arctan$ ali $\tan^{-1}$.
+
+<center><img src="Capture.PNG" alt="tangens" width="400"></center>
+
+---
+
+<h2> <a name="opomba2"></a> Opomba 2 (radiani)</h2>
+
+Radiani so naravna merska enota za velikost kota. Za predstavo o konceptu radianov razmislite o rezini pite. Navesti želite velikost kota na "točki" rezine pite.
+Ta točka je v središču kroga (celotne pite) s polmerom, ki je enak dolžini strani rezine pite. Ukrivljena dolžina vzdolž zunanje strani skorje je dolžina loka.
+Očitno je, da večji kot je, večja je dolžina loka - seveda pod pogojem, da pita sama ne raste (tj. Polmer mora biti konstanten).
+Torej lahko določite velikost kota z navedbo razmerja med dolžino loka in polmerom (kot je prikazano na sliki). Vrednost tega razmerja je število radianov.
+
+Morda se spomnite, da je $\pi$ razmerje med obsegom kroga in njegovim premerom, premer pa je dvakrat večji od polmera.
+Potem bi moralo biti razmerje med dolžino loka polkrožne rezine torte (polovice torte) in njenim polmerom $\pi$ radianov (pomislite).
+Zato je $\pi$ radianov = 180 stopinj. Iz tega razmerja lahko pretvarjamo naprej in nazaj med radiani v stopinje tako enostavno, kot lahko pretvarjamo med, recimo, metri in čevlji.
+
+<center><img src="Capture1.PNG" alt="radiani" width="200"></center>
 
     </textarea>
     <script src="https://remarkjs.com/downloads/remark-latest.min.js">
